@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-calculator, .bmi-result {
+    flex: 1;
+    margin: 10px;
+}
+
+.bmi-calculator {
+    max-width: 50%;
+}
+
+.bmi-result {
+    max-width: 50%;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #007bff;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.gender-options label {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.features ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.features ul li {
+    margin-bottom: 5px;
+}
+
+.result-box {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+}
+
+#bmiValue {
+    font-size: 48px;
+    color: #333;
+}
+
+.advice {
+    margin-top: 20px;
+}
+
+.consult-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diseases ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.diseases ul li {
+    margin-bottom: 5px;
+}
+
+.app-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-download button {
+    background-color: #28a745;
+}
+
+.app-download button:hover {
+    background-color: #218838;
+}

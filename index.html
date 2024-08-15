@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Bagian kepala dokumen, isinya ada info dasar kayak charset, viewport buat responsif, sama link ke CSS dan JS -->
     <meta charset="UTF-8">
+    <!-- Biar tampilannya pas di semua perangkat -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul yang nongol di tab browser -->
     <title>Kalkulator BMI</title>
+    <!-- Link ke file CSS biar tampilan lebih keren -->
     <link rel="stylesheet" href="css/style.css">
-   <script src="js/script.js"></script>
+    <!-- Link ke file JavaScript buat fungsi kalkulatornya -->
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <!-- Kontainer utama yang ngebungkus semua konten -->
     <div class="container">
+        <!-- Bagian kalkulator BMI -->
         <div class="bmi-calculator">
+            <!-- Judul kalkulatornya -->
             <h2>Kalkulator BMI</h2>
+            <!-- Paragraf pembuka, kasih info soal pentingnya berat badan ideal -->
             <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
             
+            <!-- Form untuk input data pengguna -->
             <form id="bmiForm" onsubmit="return calculateBMI(event)">
+                <!-- Pilihan jenis kelamin -->
                 <label>Jenis Kelamin</label>
                 <div class="gender-options">
                     <input type="radio" id="male" name="gender" value="Pria" checked>
@@ -22,21 +33,24 @@
                     <label for="female">Wanita</label>
                 </div>
             
+                <!-- Input berat badan -->
                 <label for="weight">Berat Badan (kg)</label>
                 <input type="number" id="weight" placeholder="Masukkan Berat Badan" required>
             
+                <!-- Input usia -->
                 <label for="age">Usia (tahun)</label>
                 <input type="number" id="age" placeholder="Masukkan Umur" required>
             
+                <!-- Input tinggi badan -->
                 <label for="height">Tinggi badan (cm)</label>
                 <input type="number" id="height" placeholder="Masukkan Tinggi Badan" required>
             
+                <!-- Tombol buat hitung BMI dan reset form -->
                 <button type="submit">Hitung BMI</button>
                 <button type="reset">Reset</button>
             </form>
             
-            
-
+            <!-- Bagian fitur yang ditawarkan -->
             <div class="features">
                 <h3>Keunggulan fitur</h3>
                 <ul>
@@ -44,27 +58,32 @@
                     <li>Menentukan kategori berat badan ideal atau tidak</li>
                     <li>Mempersiapkan program penurunan berat badan</li>
                 </ul>
+                <!-- Paragraf tambahan tentang penggunaan kalkulator -->
                 <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh menggunakan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
                 <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
             </div>
         </div>
 
+        <!-- Bagian untuk menampilkan hasil BMI -->
         <div class="bmi-result">
             <h2>Hasil</h2>
             <div id="result" class="result-box">
+                <!-- Tempat nilai BMI bakal ditampilkan -->
                 <h1 id="bmiValue"></h1>
+                <!-- Tombol buat download hasil BMI -->
                 <button id="download">Download Hasil BMI</button>
             </div>
+            <!-- Saran tambahan dan tombol konsultasi -->
             <div class="advice">
-                <p>Hasil BMI diantara 23 dan 25</p>
-                <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
-                <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
-                <p>Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+                <div id="result"></div>
+                <div id="additional-result"></div>
+
                 <div class="consult-buttons">
                     <button>Konsultasi Ahli Gizi Via Aplikasi</button>
                     <button>Registrasi Online Ahli Gizi</button>
                 </div>
             </div>
+            <!-- Info tentang penyakit yang terkait dengan kegemukan -->
             <div class="diseases">
                 <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
                 <ul>
@@ -73,6 +92,7 @@
                     <li>Sakit Jantung</li>
                     <li>Osteoarthritis</li>
                 </ul>
+                <!-- Tombol konsultasi dokter -->
                 <div class="consult-buttons">
                     <button>Konsultasi Dokter Via Aplikasi</button>
                     <button>Registrasi Online Sekarang</button>
@@ -80,9 +100,5 @@
             </div>
         </div>
     </div>
-    <div class="app-download">
-        <button>Download Aplikasi</button>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>

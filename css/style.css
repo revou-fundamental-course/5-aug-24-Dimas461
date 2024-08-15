@@ -1,4 +1,5 @@
 body {
+    /* Pilihan font yang simpel, latar belakang abu-abu muda, dan sedikit jarak di sekitar halaman */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -6,6 +7,7 @@ body {
 }
 
 .container {
+    /* Tampilan fleksibel untuk bagi dua area, batas lebar max 1200px, tengahin halaman, dan kasih latar putih sama bayangan */
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -15,41 +17,50 @@ body {
 }
 
 .bmi-calculator, .bmi-result {
+    /* Setiap bagian kalkulator dan hasilnya dibagi rata dengan sedikit margin */
     flex: 1;
     margin: 10px;
 }
 
 .bmi-calculator {
+    /* Batas lebar untuk bagian kalkulator biar gak terlalu lebar */
     max-width: 50%;
 }
 
 .bmi-result {
+    /* Sama kayak kalkulator, bagian hasil juga dibatesin lebarnya */
     max-width: 50%;
 }
 
 h2 {
+    /* Warna teks utama biar lebih kontras */
     color: #333;
 }
 
 h3 {
+    /* Warna judul yang sedikit lebih cerah, pakai biru */
     color: #007bff;
 }
 
 p {
+    /* Warna teks paragraf jadi abu-abu biar gak terlalu mencolok */
     color: #666;
 }
 
 form {
+    /* Form dibuat vertikal, dari atas ke bawah */
     display: flex;
     flex-direction: column;
 }
 
 label {
+    /* Jarak atas label biar gak nempel, dan huruf dibuat tebal */
     margin-top: 10px;
     font-weight: bold;
 }
 
 input[type="number"] {
+    /* Gaya input angka, padding buat nyaman, margin atas kecil, border halus, dan ujung-ujungnya dibikin bulat */
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -57,17 +68,20 @@ input[type="number"] {
 }
 
 .gender-options {
+    /* Bikin pilihan gender dalam satu baris dan rapiin */
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
 .gender-options label {
+    /* Jarak label gender biar gak terlalu nempel */
     margin-right: 20px;
     margin-left: 5px;
 }
 
 button {
+    /* Gaya tombol: padding enak, margin atas, warna biru, teks putih, tanpa border, dan ujung bulat */
     padding: 10px;
     margin-top: 20px;
     background-color: #007bff;
@@ -78,19 +92,23 @@ button {
 }
 
 button:hover {
+    /* Efek hover tombol, birunya sedikit lebih gelap */
     background-color: #0056b3;
 }
 
 .features ul {
+    /* Jarak atas dan bawah untuk daftar fitur */
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .features ul li {
+    /* Jarak bawah antar item di daftar fitur */
     margin-bottom: 5px;
 }
 
 .result-box {
+    /* Boks hasil BMI, tengahin teks, border halus, padding nyaman, latar abu muda, dan jarak atas dikit */
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
@@ -99,38 +117,31 @@ button:hover {
 }
 
 #bmiValue {
+    /* Gedein angka BMI dan kasih warna kontras */
     font-size: 48px;
     color: #333;
 }
 
 .advice {
+    /* Jarak atas untuk bagian saran */
     margin-top: 20px;
 }
 
 .consult-buttons {
+    /* Tombol konsultasi diatur biar jaraknya rata dan sebaris */
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .diseases ul {
+    /* Jarak atas dan bawah untuk daftar penyakit */
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .diseases ul li {
+    /* Jarak bawah antar item di daftar penyakit */
     margin-bottom: 5px;
 }
 
-.app-download {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.app-download button {
-    background-color: #28a745;
-}
-
-.app-download button:hover {
-    background-color: #218838;
-}
